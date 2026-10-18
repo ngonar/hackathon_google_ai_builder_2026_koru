@@ -1,0 +1,83 @@
+[
+  {
+    "id": "d4273c3f-03df-4748-aef0-a2c79314c653",
+    "memorial_id": "peggy-sutherland-1946",
+    "year": "1946",
+    "title": "A Beginning in Otago",
+    "desc": "Born in Dunedin, New Zealand to Hamish and Elspeth Sutherland. Grew up exploring rolling hills, coastal native ferns, and coastal seabirds.",
+    "category": "milestone",
+    "quote": "The earth always knows how to heal itself, my dear.",
+    "photo_url": null,
+    "tags": [
+      "Birth",
+      "Dunedin",
+      "Otago"
+    ],
+    "created_at": "2026-10-18T10:23:17.673585"
+  },
+  {
+    "id": "93279bf7-af73-4720-b82f-3529e5beab43",
+    "memorial_id": "peggy-sutherland-1946",
+    "year": "1968",
+    "title": "Botany Honors at University of Otago",
+    "desc": "Graduated with high distinction in southern alpine botany, discovering unique leaf adaptations of Otago tussock grasslands under mountain frost.",
+    "category": "education",
+    "quote": "Plants speak in the quietest whispers; you just have to slow your heart down to hear them.",
+    "photo_url": null,
+    "tags": [
+      "Botany",
+      "University",
+      "Otago"
+    ],
+    "created_at": "2026-10-18T10:23:17.673607"
+  },
+  {
+    "id": "ed1c3767-1574-4a50-946e-41d57e429c2b",
+    "memorial_id": "peggy-sutherland-1946",
+    "year": "1974",
+    "title": "The Southern Alps Expedition",
+    "desc": "An iconic alpine research expedition with family where she cataloged rare blue tussocks and wild buttercups, teaching Clara the quiet magic of mountain mists.",
+    "category": "expedition",
+    "quote": "Wrap your hands around the warm tin kettle, Clara; cold mountain air only sharpens the spirit.",
+    "photo_url": "/static/avatars/peggy_alps.png",
+    "tags": [
+      "Southern Alps",
+      "Expedition",
+      "Family",
+      "Alpine"
+    ],
+    "created_at": "2026-10-18T10:23:17.673617"
+  },
+  {
+    "id": "8d44a7c3-b0d8-4bdb-91f8-adc828b20685",
+    "memorial_id": "peggy-sutherland-1946",
+    "year": "1992",
+    "title": "The Conservatory Sanctuary & Herbal Teas",
+    "desc": "Hand-crafted her celebrated Victorian conservatory filled with native silver ferns, potted white jasmine, and English lavender.",
+    "category": "passion",
+    "quote": "Let us put the kettle on and let the quiet do the talking.",
+    "photo_url": "/static/peggy_avatar.png",
+    "tags": [
+      "Conservatory",
+      "Lavender",
+      "Jasmine"
+    ],
+    "created_at": "2026-10-18T10:23:17.673624"
+  },
+  {
+    "id": "cd08e808-1f28-4bb3-b6ae-2237840cb1ec",
+    "memorial_id": "peggy-sutherland-1946",
+    "year": "2023",
+    "title": "Resting in Grace",
+    "desc": "Passed peacefully surrounded by family and drying herbs in Dunedin, leaving an enduring legacy of quiet fortitude and boundless maternal warmth.",
+    "category": "milestone",
+    "quote": "Those we love never truly leave us; they live on in every act of kindness they inspired.",
+    "photo_url": null,
+    "tags": [
+      "Legacy",
+      "Peace",
+      "Grace"
+    ],
+    "created_at": "2026-10-18T10:23:17.673634"
+  }
+]

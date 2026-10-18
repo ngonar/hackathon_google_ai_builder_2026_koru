@@ -1,0 +1,58 @@
+[
+  {
+    "id": "a7b48370-f9f9-4f42-ba33-c42269101181",
+    "memorial_id": "peggy-sutherland-1946",
+    "artifact_type": "photo",
+    "title": "Master Portrait: Sunlit Conservatory (1982)",
+    "file_url": "/static/peggy_avatar.png",
+    "file_name": "peggy_avatar.png",
+    "file_size_kb": 77.8,
+    "cloning_purpose": "Veo 2 & Imagen 3 Subject Consistency Master",
+    "era_context": "Late 50s adulthood, smiling in greenhouse",
+    "status": "active_reference",
+    "fidelity_score": 98.8,
+    "created_at": "2026-10-18T10:23:17.674415"
+  },
+  {
+    "id": "528addab-bb41-4fae-9630-fc95fb98fcb5",
+    "memorial_id": "peggy-sutherland-1946",
+    "artifact_type": "photo",
+    "title": "Alpine Research Expedition Snapshot (1974)",
+    "file_url": "/static/avatars/peggy_alps.png",
+    "file_name": "peggy_alps.png",
+    "file_size_kb": 77.8,
+    "cloning_purpose": "Otago Outdoor High-Altitude Lighting Rig",
+    "era_context": "Otago Southern Alps tussock ridge",
+    "status": "active_reference",
+    "fidelity_score": 97.6,
+    "created_at": "2026-10-18T10:23:17.674434"
+  },
+  {
+    "id": "80e93361-46e6-461e-9a6f-0137d5e604b5",
+    "memorial_id": "peggy-sutherland-1946",
+    "artifact_type": "voice",
+    "title": "Cassette Tape #4: Southern Alps Buttercups & Tea",
+    "file_url": "/api/voice/benchmark",
+    "file_name": "cassette_1974_otago_buttercups.wav",
+    "file_size_kb": 512.4,
+    "cloning_purpose": "Aoede Neural Voice Stem (Otago Accent & Cadence)",
+    "era_context": "Recorded on battery cassette in mountain tent",
+    "status": "active_reference",
+    "fidelity_score": 98.2,
+    "created_at": "2026-10-18T10:23:17.674443"
+  },
+  {
+    "id": "b4ccc98f-60d1-4228-b9eb-df09168cd8da",
+    "memorial_id": "peggy-sutherland-1946",
+    "artifact_type": "video",
+    "title": "Super-8 Home Movie: Garden Walk & Smiling Gaze (1979)",
+    "file_url": "/static/avatars/peggy_garden.png",
+    "file_name": "super8_garden_walk_1979.mp4",
+    "file_size_kb": 2450.0,
+    "cloning_purpose": "Facial Motion Dynamics & Natural Blinking Rhythm",
+    "era_context": "Dunedin cottage hillside overlooking harbour",
+    "status": "active_reference",
+    "fidelity_score": 97.9,
+    "created_at": "2026-10-18T10:23:17.674450"
+  }
+]

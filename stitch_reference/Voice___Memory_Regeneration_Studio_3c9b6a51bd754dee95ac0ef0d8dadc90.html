@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f3fbf6;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#0c1f17", "surface": "#f3fbf6", "primary-container": "#2d4037", "on-primary": "#ffffff", "on-secondary-fixed": "#052014", "background": "#f3fbf6", "surface-tint": "#4f6359", "on-primary-fixed-variant": "#384b42", "on-error": "#ffffff", "primary-fixed": "#d2e8db", "primary": "#172a22", "surface-bright": "#f3fbf6", "secondary-fixed": "#cbead5", "surface-container-high": "#e2eae5", "surface-dim": "#d3dcd7", "on-secondary": "#ffffff", "inverse-surface": "#2a322f", "surface-container-low": "#edf6f1", "surface-variant": "#dce4e0", "tertiary-container": "#56340e", "on-background": "#151d1a", "on-tertiary-fixed": "#2c1600", "on-surface-variant": "#424844", "secondary-container": "#cbead5", "outline": "#737874", "on-surface": "#151d1a", "on-tertiary-fixed-variant": "#623f18", "on-tertiary-container": "#cd9d6d", "surface-container-highest": "#dce4e0", "primary-fixed-dim": "#b6ccbf", "secondary-fixed-dim": "#afceba", "on-secondary-container": "#4f6a5a", "secondary": "#496454", "error": "#ba1a1a", "inverse-on-surface": "#eaf3ee", "tertiary": "#3b1f00", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffdcbd", "error-container": "#ffdad6", "on-primary-container": "#96aba0", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#324c3d", "inverse-primary": "#b6ccbf", "surface-container": "#e7f0eb", "tertiary-fixed-dim": "#f0bd8b", "outline-variant": "#c2c8c3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-sm": "0.75rem", "space-xl": "2.5rem", "gutter-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1rem", "margin-tablet": "2rem", "space-lg": "1.5rem", "margin": "1.25rem", "margin-desktop": "3rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col relative"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(45,64,55,0.06)] transition-all duration-300"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Koru Spiral Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbklBgGrw3C1vGmToX_Wt-fgv3u1nrKhYY1ps7Dent5baoxsTAHTW0ojk7H7AzaYz-i-6MtgbgDN4DDmjebVRSQj2SdSY2kLav4sOg8oC7E5ADL_RCMiOT0bEHBRBWJwb39W7EbCZl_mVfu6I49O0NIxKqqTG1zu_OWX1ChSwVR_cS-eVipOP6vzmNKhKyx9Iz4CKBYQlkhHvwWKzAoqQMVhDh4CFGItn1sc-5yYNZLXfYxVR-XZg0"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">KORU Presence</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Memory Studio</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/60 shadow-[0_1px_6px_rgba(45,64,55,0.04)]"><span class="w-2 h-2 rounded-full bg-[#34A853] animate-pulse"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold whitespace-nowrap">Margaret • In Communion</span></div><div class="w-8 h-8 rounded-full ring-2 ring-primary-fixed-dim/40 overflow-hidden flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ykbA7pMgVdUOB5Nsh-dLZxR4kntYYagampWr9jbUdTg4keBUfAknJK-grbaSjsL26ROvqS4eIQsOS2Lsz1oaDtov8HqhYcEtfIvKEJjgCuaKuCqPFDE4YOUFViHUA93CjOrCOYrLxhDfrWT13jYWx1v1wqvH_bFcbM8XD4YHNFSa4eErxD3PtkVf8t7U_kgd6yUPV4oqV1evajgHIqdgi4Hto5kA1eKR2L95Ckaw4cqSsfAtiuJN"/></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24 px-margin-mobile flex flex-col"><div class="flex flex-col w-full gap-space-lg">
+<!-- Persona Overview & Fidelity Score Card -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-44 h-44 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md z-10">
+<div class="relative flex-shrink-0">
+<div class="w-20 h-20 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sepia toned intimate portrait of Margaret Peggy Sutherland, an elderly gentle woman with silver hair, warm expressive eyes, soft smile, wearing a subtle knitted sage cardigan in soft natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8dh7Sd6Gb5J2XJPwBvDjB43wF6Caexc9PN6EsA94rd_uzqy1h_48Zwjs7cJT60GB2nFQXw8KkRvOjgOXGUL5EZfrBr1Li2pJYPk0yfxsG-KWCXCjnfYVkNtfvN8h3Wu12lb8dtQ1n0rcBgfj-XLVqm7vmkNcpWXyyDJ9La7zOCi-BaEB48FLMIu9-Wx9tTamBXuE-Ot81-sgasxAE3FHnXftoEgps_cMEekhsWKbUb6SjxHFrId7A"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary w-6 h-6 rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Margaret "Peggy" Sutherland</h2>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex-shrink-0">
+            Active
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">1946 – 2023 • Dunedin, Aotearoa</p>
+<div class="flex items-center gap-1.5 mt-2">
+<div class="flex-1 bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 96%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary">96% Fidelity</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center gap-space-sm z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-snug">
+        Regenerated from <strong class="text-on-surface font-semibold">42 audio memos</strong>, <strong class="text-on-surface font-semibold">184 letters</strong>, and <strong class="text-on-surface font-semibold">5 journals</strong>.
+      </p>
+</div>
+<!-- Quick Action / Voice Test Button -->
+<button class="w-full bg-primary-container text-on-primary font-label-lg text-label-lg py-3 px-space-md rounded-xl flex items-center justify-center gap-2 hover:bg-primary transition-all active:scale-[0.99] shadow-sm z-10" id="testAvatarBtn">
+<span class="material-symbols-outlined text-[20px]" id="testAvatarIcon">play_circle</span>
+<span id="testAvatarText">Test Live Avatar Voice</span>
+</button>
+</section>
+<!-- Voice Cloning & Calibration Engine -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">graphic_eq</span>
+<h3 class="font-title-lg text-title-lg text-primary">Acoustic Calibration</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded-full">v3.4 Neural Stem</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Otago accent with natural southern lilt, gentle maternal timbre, calibrated from cassette captures (1978–2022).
+    </p>
+<!-- Gauge Pair -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Timbre Accuracy</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">98.2%</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">high</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 98.2%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pause &amp; Cadence</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">94.7%</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">natural</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 94.7%"></div>
+</div>
+</div>
+</div>
+<!-- Interactive Waveform Player -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 active:scale-95 transition-transform shadow-sm" id="sampleAudioPlayBtn">
+<span class="material-symbols-outlined text-[20px]" id="samplePlayIcon">play_arrow</span>
+</button>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Acoustic Benchmark</span>
+<p class="font-headline-sm text-headline-sm text-primary italic leading-snug mt-0.5">
+            "Hello, my darling. It is so wonderful to hear your voice again."
+          </p>
+</div>
+</div>
+<!-- Waveform Simulation SVG -->
+<div class="w-full h-10 flex items-center justify-between gap-1 px-1 pt-1" id="waveformBars">
+<div class="w-1 bg-secondary/30 rounded-full h-3 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/40 rounded-full h-5 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/70 rounded-full h-8 transition-all duration-300"></div>
+<div class="w-1 bg-secondary rounded-full h-6 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/80 rounded-full h-9 transition-all duration-300"></div>
+<div class="w-1 bg-secondary rounded-full h-5 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/90 rounded-full h-7 transition-all duration-300"></div>
+<div class="w-1 bg-secondary rounded-full h-9 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/80 rounded-full h-4 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/60 rounded-full h-7 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/40 rounded-full h-3 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/70 rounded-full h-8 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/90 rounded-full h-6 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/60 rounded-full h-4 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/40 rounded-full h-2 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/80 rounded-full h-7 transition-all duration-300"></div>
+<div class="w-1 bg-secondary rounded-full h-9 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/70 rounded-full h-5 transition-all duration-300"></div>
+<div class="w-1 bg-secondary/40 rounded-full h-3 transition-all duration-300"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm px-1">
+<span id="audioCurrentTime">0:00</span>
+<span>0:06</span>
+</div>
+</div>
+<!-- Tone Sliders -->
+<div class="flex flex-col gap-space-md pt-1">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5" for="warmthRange">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">favorite</span>
+            Warmth &amp; Emotional Presence
+          </label>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="warmthVal">Nurturing &amp; Deep</span>
+</div>
+<input class="w-full accent-secondary bg-surface-container-high rounded-lg h-2 cursor-pointer" id="warmthRange" max="100" min="1" type="range" value="88"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5" for="literaryRange">
+<span class="material-symbols-outlined text-[16px] text-secondary">menu_book</span>
+            Botanical &amp; Literary Metaphor
+          </label>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="literaryVal">Reflective (Letters)</span>
+</div>
+<input class="w-full accent-secondary bg-surface-container-high rounded-lg h-2 cursor-pointer" id="literaryRange" max="100" min="1" type="range" value="72"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5" for="cadenceRange">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_bottom</span>
+            Reminiscence Cadence
+          </label>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="cadenceVal">Gentle &amp; Unrushed</span>
+</div>
+<input class="w-full accent-secondary bg-surface-container-high rounded-lg h-2 cursor-pointer" id="cadenceRange" max="100" min="1" type="range" value="40"/>
+</div>
+</div>
+</section>
+<!-- Life Memory Corpus & Knowledge Graph -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">schema</span>
+<h3 class="font-title-lg text-title-lg text-primary">Memory Corpus</h3>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold flex items-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+        Add Memories
+      </button>
+</div>
+<!-- Ingested Artifacts Row -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-primary">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Voicemails &amp; Memos</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-primary">184</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Letters &amp; Diaries</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-primary">68</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Annotated Photos</span>
+</div>
+</div>
+<!-- Visual Artifact Teaser -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="relative rounded-xl overflow-hidden h-28 bg-surface-container group">
+<img class="w-full h-full object-cover" data-alt="Faded vintage handwritten letter on parchment with botanical sketch of a New Zealand fern frond in Margaret's handwriting, warm sepia ink and dried pressed flora." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQ57v9sQjp3B2OjkIj1UYxZ5Iszy8esgpUBODAN3UuYjv8TF6n26JreD0ySJ07hh1teZ8BCccS1aXVAxPDnqm6J8wOaXxYHPiOtvd0o-16C1VdqMRcrXubo2NcuQk6zQNYH0TOOZhLdCeCLXQzooHPaP16pag99kk7_3n7vVTOImugfN7kXFeFiGQfXstD5oZwugwjXZIIutaMWzlZA2h9SRgNzot8eRQqHz5nz06uWOQzWyTi6xw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-2">
+<span class="font-label-sm text-label-sm text-on-primary truncate">Letter to Arthur, 1982</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden h-28 bg-surface-container group">
+<img class="w-full h-full object-cover" data-alt="Black and white photograph of Peggy Sutherland teaching high school students in a sunlit laboratory greenhouse surrounded by native plants and microscope slides." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGwHsFdk7VjZOTci31VzPkVn8X8lVtYs8GFT1LSHsGgFU11-dxhgl1EZqDHWrkNzqct0dbt7tpdH4WEYWJb2C2jSqfFwDawhLCSKmtksCp64mZUfvb7h-NcjoMorz81AzE5qanrTv0MKR_WvJfIkoWylG79yKQO5MLLth9HJPH1Nv3D0jCAVrOpa9WFlItt_CVBYFJf-emcOUfPtMTz4TDCoWsthxa2RMw_UbE9JmhxrJFc29p0PbM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-2">
+<span class="font-label-sm text-label-sm text-on-primary truncate">Otago Girls' High, 1974</span>
+</div>
+</div>
+</div>
+<!-- Memory Explorer Chips -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold tracking-wider">Semantic Knowledge Clusters</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-3 py-1 bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Early Dunedin Years (1946–68)
+        </span>
+<span class="px-3 py-1 bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Fiordland Botany Expeditions
+        </span>
+<span class="px-3 py-1 bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Family Scone Recipe &amp; Lore
+        </span>
+<span class="px-3 py-1 bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Gardening Philosophies
+        </span>
+</div>
+</div>
+</section>
+<!-- Sacred Ethical Guardrails & Boundaries -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+<h3 class="font-title-lg text-title-lg text-primary">Sacred Guardrails &amp; Ethics</h3>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Toggle 1: Truth Grounding -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Strict Truth Grounding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            Constrains Peggy's responses to verified letters, journals, and family records. Disallows hallucinated events.
+          </p>
+</div>
+<button aria-checked="true" class="w-12 h-6 bg-primary rounded-full relative p-0.5 flex-shrink-0 transition-colors" onclick="this.setAttribute('aria-checked', this.getAttribute('aria-checked') === 'true' ? 'false' : 'true'); this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-container-high'); this.querySelector('div').classList.toggle('translate-x-6');" role="switch">
+<div class="w-5 h-5 bg-on-primary rounded-full shadow-sm transform translate-x-6 transition-transform"></div>
+</button>
+</div>
+<!-- Toggle 2: Grief & Gentle Consolation -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Grief-Aware Comfort Tone</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+            Adapts vocabulary when family members express loneliness or heartache, offering Peggy's characteristic maternal solace.
+          </p>
+</div>
+<button aria-checked="true" class="w-12 h-6 bg-primary rounded-full relative p-0.5 flex-shrink-0 transition-colors" onclick="this.setAttribute('aria-checked', this.getAttribute('aria-checked') === 'true' ? 'false' : 'true'); this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-container-high'); this.querySelector('div').classList.toggle('translate-x-6');" role="switch">
+<div class="w-5 h-5 bg-on-primary rounded-full shadow-sm transform translate-x-6 transition-transform"></div>
+</button>
+</div>
+<!-- Family Circle Access -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex -space-x-2 flex-shrink-0">
+<span class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm font-bold ring-2 ring-surface-container-lowest">A</span>
+<span class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm font-bold ring-2 ring-surface-container-lowest">C</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold ring-2 ring-surface-container-lowest">+4</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-semibold truncate">Sutherland Sanctuary Circle</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Arthur, Clara, Julian, Liam +2</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline flex-shrink-0">
+          Manage
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions for Voice Sample Player & Controls
+  const playBtn = document.getElementById('sampleAudioPlayBtn');
+  const playIcon = document.getElementById('samplePlayIcon');
+  const timeDisplay = document.getElementById('audioCurrentTime');
+  const waveformBars = document.getElementById('waveformBars')?.children;
+  let isPlaying = false;
+  let playInterval = null;
+  let currentSec = 0;
+
+  if (playBtn) {
+    playBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        playIcon.textContent = 'pause';
+        playInterval = setInterval(() => {
+          currentSec++;
+          timeDisplay.textContent = '0:0' + (currentSec % 7);
+          if (waveformBars) {
+            Array.from(waveformBars).forEach(bar => {
+              const h = Math.floor(Math.random() * 24) + 8;
+              bar.style.height = `${h}px`;
+            });
+          }
+          if (currentSec >= 6) {
+            clearInterval(playInterval);
+            isPlaying = false;
+            playIcon.textContent = 'play_arrow';
+            currentSec = 0;
+            timeDisplay.textContent = '0:00';
+          }
+        }, 1000);
+      } else {
+        clearInterval(playInterval);
+        playIcon.textContent = 'play_arrow';
+      }
+    });
+  }
+
+  // Live Test Avatar Voice CTA Micro-reaction
+  const testAvatarBtn = document.getElementById('testAvatarBtn');
+  const testAvatarIcon = document.getElementById('testAvatarIcon');
+  const testAvatarText = document.getElementById('testAvatarText');
+  let isTesting = false;
+
+  if (testAvatarBtn) {
+    testAvatarBtn.addEventListener('click', () => {
+      isTesting = !isTesting;
+      if (isTesting) {
+        testAvatarIcon.textContent = 'graphic_eq';
+        testAvatarText.textContent = 'Streaming Persona Audio...';
+        testAvatarBtn.classList.add('bg-secondary');
+        setTimeout(() => {
+          testAvatarIcon.textContent = 'play_circle';
+          testAvatarText.textContent = 'Test Live Avatar Voice';
+          testAvatarBtn.classList.remove('bg-secondary');
+          isTesting = false;
+        }, 4000);
+      }
+    });
+  }
+
+  // Dynamic feedback on range sliders
+  const warmth = document.getElementById('warmthRange');
+  const warmthVal = document.getElementById('warmthVal');
+  if (warmth && warmthVal) {
+    warmth.addEventListener('input', (e) => {
+      const v = e.target.value;
+      if (v > 75) warmthVal.textContent = 'Nurturing & Deep';
+      else if (v > 40) warmthVal.textContent = 'Balanced & Tender';
+      else warmthVal.textContent = 'Crisp & Restrained';
+    });
+  }
+
+  const literary = document.getElementById('literaryRange');
+  const literaryVal = document.getElementById('literaryVal');
+  if (literary && literaryVal) {
+    literary.addEventListener('input', (e) => {
+      const v = e.target.value;
+      if (v > 70) literaryVal.textContent = 'Reflective (Poetic)';
+      else if (v > 35) literaryVal.textContent = 'Conversational Letters';
+      else literaryVal.textContent = 'Direct & Simple';
+    });
+  }
+
+  const cadence = document.getElementById('cadenceRange');
+  const cadenceVal = document.getElementById('cadenceVal');
+  if (cadence && cadenceVal) {
+    cadence.addEventListener('input', (e) => {
+      const v = e.target.value;
+      if (v > 65) cadenceVal.textContent = 'Brisk & Lively';
+      else if (v > 35) cadenceVal.textContent = 'Gentle & Unrushed';
+      else cadenceVal.textContent = 'Contemplative Pause';
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_-4px_rgba(45,64,55,0.08)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-gutter-sm max-w-lg mx-auto"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="live-presence" href="#"><span class="material-symbols-outlined text-[24px]">video_camera_front</span><span class="font-label-sm text-label-sm tracking-tight">Presence</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="memory-chat" href="#"><span class="material-symbols-outlined text-[24px]">record_voice_over</span><span class="font-label-sm text-label-sm tracking-tight">Chat</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 gap-1 transition-colors text-primary font-semibold" data-path="memory-studio" href="#"><span class="material-symbols-outlined text-[24px]">graphic_eq</span><span class="font-label-sm text-label-sm tracking-tight">Voice &amp; Studio</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 py-1 gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="life-archive" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm tracking-tight">Life Story</span></a></div></nav></body></html>

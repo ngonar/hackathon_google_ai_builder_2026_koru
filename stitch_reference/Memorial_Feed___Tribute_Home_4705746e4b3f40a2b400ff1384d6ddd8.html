@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#fcba66","inverse-surface":"#2c322e","on-tertiary":"#ffffff","inverse-on-surface":"#edf2ed","on-surface":"#181d1a","on-tertiary-fixed":"#171d1a","tertiary-fixed":"#dee4df","surface-container":"#ebefea","on-primary-fixed":"#092011","primary":"#273f2d","error-container":"#ffdad6","on-tertiary-container":"#bfc5c0","primary-fixed-dim":"#b2cdb5","on-error":"#ffffff","on-secondary-fixed-variant":"#653e00","on-primary":"#ffffff","primary-fixed":"#ceead0","outline":"#737972","surface-tint":"#4c6450","on-secondary-fixed":"#2a1700","on-secondary":"#ffffff","surface-container-low":"#f0f5f0","outline-variant":"#c3c8c0","error":"#ba1a1a","on-primary-fixed-variant":"#344c3a","on-background":"#181d1a","surface-dim":"#d7dbd6","surface-variant":"#dfe4df","tertiary-container":"#4c524f","surface-container-high":"#e5e9e4","tertiary-fixed-dim":"#c2c8c3","surface-container-highest":"#dfe4df","secondary-container":"#ffbd6a","secondary":"#855403","on-tertiary-fixed-variant":"#424845","surface-container-lowest":"#ffffff","on-secondary-container":"#784a00","tertiary":"#353b38","on-primary-container":"#afcab2","surface":"#f6fbf5","on-surface-variant":"#434842","on-error-container":"#93000a","inverse-primary":"#b2cdb5","background":"#f6fbf5","primary-container":"#3e5643","secondary-fixed":"#ffddb8","surface-bright":"#f6fbf5"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","space-lg":"1.5rem","gutter-lg":"1.5rem","space-xl":"2.5rem",margin:"1.25rem","margin-md":"2rem","space-md":"1rem","space-xs":"0.25rem","margin-lg":"3rem",gutter:"1rem"},fontFamily:{"body-sm":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"display-lg":["Playfair Display"]},fontSize:{"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-sm":["19px",{lineHeight:"26px",fontWeight:"500"}],"body-lg":["17px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg":["28px",{lineHeight:"36px",fontWeight:"600"}],"display-lg":["40px",{lineHeight:"52px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Koru Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDggksp7cv7mSKzPqfLrbGGyou0l5h807Na1OL_N3r-3fUBNUUHYESqld3SBM3MADGSqN9Nbo_LVP-x-abHY9S7_aXgByEkoU2JFX_vntlhlz8QgZDHGnm9F5FaI-c7w4j-gX6FRxjKVulsDszr1HUW_6dV17a-HlGAMoH7Xh7Dp00gsjAUAE_D7WSMq9E-e9MnP_RxQMz89p2nTT2DL83BV9yJzSRghHZJGz0e-_XwVcrVyaXHQD7P"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-medium tracking-tight">Koru</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal leading-none -mt-0.5">Home</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUYwKYuGW7tOj9_uM1DbyNOsg4nM1gbDym0Ng1A8Vwn-B82SB2M7V83y6riUmjjobwMk2um-FY_z8MwOO-IdllfgqTMQ6ndXYrVND7Zn-XvIOyvqx1fE5lS4sj5aPse1iwTNqh89okrtNRETD_PsrBmqsqFJ0djWllkx50AdX98Hv9AY-GUVAnWG87Fwvjx-XQaIb8b8Gr-3oRxymqOkCC-SzY0IphqQoq4v0m2h2VuHdRwZWqZ7KM"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Serene Solace Ambient Banner -->
+<section class="px-margin pt-4 pb-2">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-8 -bottom-8 w-36 h-36 rounded-full bg-primary-fixed/40 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">flare</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Sanctuary of Peace</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary font-medium tracking-tight mt-1">
+          In Everlasting Light
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed pt-1">
+          “Those we love never truly leave us. They live on in the kindness they showed, the comfort they shared, and the love they brought into our lives.”
+        </p>
+</div>
+</div>
+</section>
+<!-- Quick Community Ritual Actions (Horizontal Scroll) -->
+<section class="mt-4">
+<div class="px-margin mb-2 flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Sacred Offerings</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Community Care</span>
+</div>
+<div class="flex items-center gap-space-sm px-margin overflow-x-auto no-scrollbar py-1">
+<!-- Light a Candle -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-fixed transition-all duration-300 shadow-sm active:scale-95" id="quick-candle-btn">
+<span class="material-symbols-outlined text-[20px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md font-semibold">Light Candle</span>
+</button>
+<!-- Place White Flower -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all duration-300 shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+<span class="font-label-md text-label-md font-medium">White Lily</span>
+</button>
+<!-- Leave Condolence -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all duration-300 shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<span class="font-label-md text-label-md font-medium">Condolence</span>
+</button>
+<!-- Plant a Tree -->
+<button class="flex-shrink-0 flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all duration-300 shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">park</span>
+<span class="font-label-md text-label-md font-medium">Plant Tree</span>
+</button>
+</div>
+</section>
+<!-- Featured Memorial Spotlight Card -->
+<section class="px-margin mt-6">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-5 shadow-sm">
+<div class="flex items-start gap-4">
+<!-- Portrait Frame -->
+<div class="relative flex-shrink-0">
+<div class="w-20 h-24 rounded-lg overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A dignified and warm photographic portrait of Eleanor Vance, an elderly woman in her late sixties with silver hair tied softly back, gentle smiling hazel eyes, wearing a moss green knitted scarf outdoors in natural soft diffuse morning garden light, evoking deep peace and timeless quiet grace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUgKaJ3g-E7bFrNG-ALcwQFEaWMjIuaVmo6t3qO_4JDdeO4hmSsVqN7n0k6HGfr5CtuoU-8ocHyuPJJc53rGYy8zUJimbtDUntOWjWtXnNeG3JR7xNbBMeC5bk6-xeBMZSe1vO9XFafX2ZrWXFG3DgGgwh-ar5vGm4jK4NBugYu_em05ni46HDxlZ8uZyxt1xBudxpjPc_UbjvHX6_lVOjnCC1D2OLulnCfr-hqMPQbsH9O2uv6T79"/>
+</div>
+<span class="absolute -bottom-2 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-on-secondary shadow-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">cruelty_free</span>
+</span>
+</div>
+<!-- Bio & Milestone -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">In Remembrance</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-medium tracking-tight mt-0.5 truncate">
+            Eleanor Vance
+          </h2>
+<p class="font-label-md text-label-md text-on-surface-variant font-medium">
+            1952 – 2024
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 line-clamp-2 leading-snug">
+            Beloved mother, lifelong botanic gardener, and high school literature teacher.
+          </p>
+</div>
+</div>
+<!-- Sacred Statistics Banner -->
+<div class="mt-4 grid grid-cols-3 gap-2 rounded-lg bg-surface-container-low p-2.5 text-center">
+<div class="flex flex-col items-center">
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span id="candle-count-display">284</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Candles Lit</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+<span>96</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Memories</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary-container" style="font-variation-settings: 'FILL' 1;">forest</span>
+<span>42</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Trees Grown</span>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="mt-4 grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-98">
+<span class="material-symbols-outlined text-[18px] text-primary">menu_book</span>
+<span class="font-label-md text-label-md font-medium">Sanctuary</span>
+</button>
+<button class="w-full py-2.5 px-3 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all flex items-center justify-center gap-1.5 shadow-sm active:scale-98" id="card-light-btn">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md font-semibold">Light Candle</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Upcoming Gathering Alert -->
+<section class="px-margin mt-6">
+<div class="rounded-xl bg-primary-container text-on-primary p-4 shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-primary-fixed/10 blur-xl"></div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex-shrink-0 flex items-center justify-center text-primary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[22px]">church</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-semibold">Gathering in Honor</span>
+<span class="font-label-sm text-label-sm text-on-primary-container bg-primary px-2 py-0.5 rounded-full">This Saturday</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-medium mt-1 tracking-tight text-on-primary">
+            Celebration of Life Service
+          </h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mt-0.5 leading-snug">
+            Nov 23, 11:00 AM • St. Jude’s Memorial Chapel & Garden
+          </p>
+<div class="mt-3 flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim transition-colors flex items-center gap-1.5 active:scale-95">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span class="font-label-sm text-label-sm font-semibold">Livestream Reminder</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-primary/60 text-on-primary hover:bg-primary transition-colors flex items-center gap-1 active:scale-95">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span class="font-label-sm text-label-sm font-medium">Directions</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Tributes Feed Header -->
+<section class="px-margin mt-7">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-medium">
+          Voices of Love & Memory
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Heartfelt tributes from dear friends and family</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+<!-- Tributes Stream List -->
+<div class="mt-4 flex flex-col gap-4">
+<!-- Tribute 1: Candle Condolence -->
+<article class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Candid, warm headshot portrait of Sarah Jenkins, a smiling brunette woman in her early thirties with a delicate linen shirt against a warm neutral cream backdrop, soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_IfzxObRnFPcWj86ZK6xhIz_3oKZr-GHm5QRLDlkNdIMwnpkBfuVghIVFuUVquqxRpRDx9RYLpXAKhZttbbvaGgtmCQEF5n5TqgC3Zs8obeJSZdhueE2FNBPbU_WTiAoIwZFJwGSyqxds4iChPBThUSuq3IeyPiuY7NwQ8B4vxHQU7qiclJ_1SBRFa88WIi0hIW92bCgtbtfOUARdBoDEPIDYzU1JfI5C1VllhkzIan6NpuLWyAR6"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Sarah Jenkins</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Family Friend • 20m ago</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[15px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-semibold">Lit a Candle</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          “Eleanor’s warmth made every Sunday gathering unforgettable. Lighting a candle for her radiant soul. She taught us all how to notice the quiet beauty in small things.”
+        </p>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span>24</span>
+</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Reply</span>
+</button>
+</div>
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+<span>Gentle hug sent</span>
+</span>
+</div>
+</article>
+<!-- Tribute 2: Garden Photo Memory -->
+<article class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<img class="w-9 h-9 rounded-full object-cover bg-surface-container" data-alt="Close-up documentary portrait of David Miller, a kind-faced middle-aged man with short beard and gentle smile, natural outdoor lighting, warm autumn forest in soft blur behind." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0mxlHezn5A4DpbVkUokBwkY32TU_ilTbaHfL-Mk05ZDq8Fzg-hs7YTOEHfzUPtwajfbtTYoCDvlQTQ0YjPHMnG5Vvh758JGMx7C0Wm0PbXnKhBsnIGSV85O7PBoM1m07HyAflZRFoEzV9m8LKTaOIbKxGQQuGlwG5wrM3N9f5QpTV6ibONIEjfLOY4KTRLCMr_v1KDxTa4iqlsH7yaai9VRlhlKrnJ4XSKe7Yldt1n3C0QF5OCHIi"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">David Miller</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Son • 2h ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          “Mom in her favourite rose garden, summer 2018. Rest peacefully, Mama.”
+        </p>
+<!-- Archived Photo Attachment -->
+<div class="relative w-full h-52 rounded-lg overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A vintage nostalgic warm photograph of an elderly mother smiling warmly with garden shears standing in an overgrown lush English cottage rose garden full of peach and cream heirloom roses in bright afternoon sunlight, film grain aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1XDnzob1OJXAw5bdNqdFznEzfQMlVwg4srkAhw98msqw0ABsVeZaIC1fIzWYtPC2sLvM2ItiEi_5VFCfoCCqrhWaudvxUEyVSyncpuuZV8L1QBLwXgi4FzH_87INhlSGHBYASdMsPg_0MDXocjhwj6Ro0mDkDZdAEmhLwsewIQZ6oCBrta7Pj5cGjUhBSRFa_3oGbQr4IVFz_aff5bblgIIj2PJ7go6zJ-cplYqcayjHa_YeLglyG"/>
+<div class="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-inverse-surface/70 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>July 14, 2018</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-1 text-secondary font-medium">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>14 hearts</span>
+</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>3 reflections</span>
+</button>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</article>
+<!-- Tribute 3: Voicemail / Audio Note Player Pill -->
+<article class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-semibold text-[13px]">
+              AM
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Aunt Margaret</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sister • Yesterday</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">mic</span>
+            Audio Story
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+          “Sharing an old summer voicemail Eleanor left me about her hydrangeas blooming. Her laugh will stay with me forever.”
+        </p>
+<!-- Audio Player Component -->
+<div class="flex items-center gap-3 p-2.5 rounded-full bg-surface-container-low shadow-sm">
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm flex-shrink-0 active:scale-95 transition-transform" id="audio-play-toggle">
+<span class="material-symbols-outlined text-[20px]" id="audio-icon" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="flex-1 min-w-0 flex flex-col justify-center">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Voicemail from Aunt Margaret</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="audio-timer">1:45</span>
+</div>
+<!-- Graphic Audio Waveform Simulation -->
+<div class="flex items-center gap-1 h-5 w-full">
+<span class="w-1 bg-primary/40 rounded-full h-2"></span>
+<span class="w-1 bg-primary/60 rounded-full h-3"></span>
+<span class="w-1 bg-primary rounded-full h-5"></span>
+<span class="w-1 bg-primary rounded-full h-4"></span>
+<span class="w-1 bg-primary/70 rounded-full h-3"></span>
+<span class="w-1 bg-primary/50 rounded-full h-4"></span>
+<span class="w-1 bg-primary rounded-full h-5"></span>
+<span class="w-1 bg-secondary rounded-full h-3"></span>
+<span class="w-1 bg-primary/40 rounded-full h-2"></span>
+<span class="w-1 bg-primary/60 rounded-full h-4"></span>
+<span class="w-1 bg-primary/80 rounded-full h-5"></span>
+<span class="w-1 bg-primary/50 rounded-full h-3"></span>
+<span class="w-1 bg-primary/30 rounded-full h-2"></span>
+<span class="w-1 bg-primary/60 rounded-full h-4"></span>
+<span class="w-1 bg-primary/40 rounded-full h-2"></span>
+<span class="w-1 bg-primary/20 rounded-full h-1"></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-0.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">headphones</span>
+<span>Listened by 48 family members</span>
+</span>
+<button class="text-primary font-medium hover:underline flex items-center gap-0.5">
+<span>Keep voice memo</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Solace Toast Notification (Triggered on candle interaction) -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-40 hidden flex items-center gap-2 px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface shadow-xl transition-all duration-300" id="candle-toast">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md">A candle has been lit in Eleanor's honor.</span>
+</div>
+</div>
+<script>
+  (function initMemorialFeedInteractions() {
+    let candleCount = 284;
+    const countDisplay = document.getElementById('candle-count-display');
+    const toast = document.getElementById('candle-toast');
+    const quickCandleBtn = document.getElementById('quick-candle-btn');
+    const cardLightBtn = document.getElementById('card-light-btn');
+    
+    function lightCandle() {
+      candleCount++;
+      if (countDisplay) {
+        countDisplay.textContent = candleCount;
+        countDisplay.classList.add('scale-125', 'text-secondary');
+        setTimeout(() => {
+          countDisplay.classList.remove('scale-125', 'text-secondary');
+        }, 400);
+      }
+
+      if (toast) {
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3200);
+      }
+    }
+
+    if (quickCandleBtn) quickCandleBtn.addEventListener('click', lightCandle);
+    if (cardLightBtn) cardLightBtn.addEventListener('click', lightCandle);
+
+    // Audio Playback simulation
+    const playToggle = document.getElementById('audio-play-toggle');
+    const audioIcon = document.getElementById('audio-icon');
+    const audioTimer = document.getElementById('audio-timer');
+    let isPlaying = false;
+    let timerInterval;
+    let secondsLeft = 105; // 1:45
+
+    if (playToggle && audioIcon && audioTimer) {
+      playToggle.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+          audioIcon.textContent = 'pause';
+          playToggle.classList.add('bg-secondary');
+          playToggle.classList.remove('bg-primary');
+          timerInterval = setInterval(() => {
+            if (secondsLeft > 0) {
+              secondsLeft--;
+              const m = Math.floor(secondsLeft / 60);
+              const s = secondsLeft % 60;
+              audioTimer.textContent = `${m}:${s < 10 ? '0' : ''}${s}`;
+            } else {
+              clearInterval(timerInterval);
+              isPlaying = false;
+              audioIcon.textContent = 'replay';
+              playToggle.classList.remove('bg-secondary');
+              playToggle.classList.add('bg-primary');
+            }
+          }, 1000);
+        } else {
+          audioIcon.textContent = 'play_arrow';
+          playToggle.classList.remove('bg-secondary');
+          playToggle.classList.add('bg-primary');
+          clearInterval(timerInterval);
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(24,29,26,0.04)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full transition-colors text-primary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="memorial" href="#"><span class="material-symbols-outlined text-[24px]">crop_portrait</span><span class="font-label-sm text-label-sm mt-0.5">Memorial</span></a><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="memory-wall" href="#"><span class="material-symbols-outlined text-[24px]">left_click</span><span class="font-label-sm text-label-sm mt-0.5">Tributes</span></a><a class="flex flex-col items-center justify-center flex-1 h-full text-on-surface-variant hover:text-primary transition-colors" data-path="service" href="#"><span class="material-symbols-outlined text-[24px]">event_available</span><span class="font-label-sm text-label-sm mt-0.5">Service</span></a></div></nav></body></html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "user-clara-001",
+    "full_name": "Clara Sutherland",
+    "email": "clara.sutherland@sanctuary.koru",
+    "password_hash": "koru_sanctuary_demo",
+    "relation": "Granddaughter",
+    "memorial_honoree": "Margaret 'Peggy' Sutherland",
+    "memorial_focus": "Living Avatar & Neural Voice",
+    "sanctuary_privacy": "family_only",
+    "preferred_tone": "Warm & Contemplative",
+    "reverence_pledge": true,
+    "avatar_initial": "C",
+    "created_at": "2024-03-15T09:30:00Z"
+  },
+  {
+    "id": "user-452f8c82",
+    "full_name": "David Sutherland",
+    "email": "david@sanctuary.koru",
+    "password_hash": "hash_secu_14",
+    "relation": "Son",
+    "memorial_honoree": "Margaret 'Peggy' Sutherland",
+    "memorial_focus": "Living Avatar & Neural Voice",
+    "sanctuary_privacy": "family_only",
+    "preferred_tone": "Warm & Contemplative",
+    "reverence_pledge": true,
+    "avatar_initial": "D",
+    "created_at": "2026-10-18T04:32:15.328312"
+  }
+]

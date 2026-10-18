@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "inverse-primary": "#b6ccbf", "tertiary": "#3b1f00", "surface-container-low": "#edf6f1", "surface-container-highest": "#dce4e0", "on-tertiary-fixed": "#2c1600", "on-primary-fixed-variant": "#384b42", "on-secondary": "#ffffff", "inverse-surface": "#2a322f", "on-surface": "#151d1a", "secondary-fixed": "#cbead5", "surface": "#f3fbf6", "primary-container": "#2d4037", "on-tertiary-container": "#cd9d6d", "on-secondary-fixed": "#052014", "secondary-container": "#cbead5", "surface-container": "#e7f0eb", "primary": "#172a22", "surface-bright": "#f3fbf6", "on-primary-fixed": "#0c1f17", "outline": "#737874", "on-error-container": "#93000a", "on-primary": "#ffffff", "inverse-on-surface": "#eaf3ee", "on-secondary-fixed-variant": "#324c3d", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#afceba", "tertiary-container": "#56340e", "outline-variant": "#c2c8c3", "background": "#f3fbf6", "primary-fixed-dim": "#b6ccbf", "surface-container-lowest": "#ffffff", "on-surface-variant": "#424844", "on-primary-container": "#96aba0", "surface-variant": "#dce4e0", "tertiary-fixed-dim": "#f0bd8b", "on-error": "#ffffff", "secondary": "#496454", "error-container": "#ffdad6", "surface-tint": "#4f6359", "on-tertiary-fixed-variant": "#623f18", "primary-fixed": "#d2e8db", "on-background": "#151d1a", "surface-container-high": "#e2eae5", "surface-dim": "#d3dcd7", "on-secondary-container": "#4f6a5a", "tertiary-fixed": "#ffdcbd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "gutter-lg": "1.5rem", "margin-desktop": "3rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-sm": "0.75rem", "gutter": "1rem", "margin-tablet": "2rem" }, "fontFamily": { "title-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"] }, "fontSize": { "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Koru Memorials Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uz-MwBNmaRD3GZW7MLA3skZ-Qn37Sl-sFSbdCU4LBRpCQxPEu_-exAByv7WrRI-h8zLraGKP-gzXdSJgckK0vzVkFmlxy1nGc94GETGQg27XIJMWBzUPLjmbpCS1Bo1xkLKG_qKZ5TPEmgicjd_y4nVxRMcvDR88h7QFRJEO80jJnEArBJZVHm6jimEH12G5EBJcy6j5HYJBLvC0ywaTc6y9Sg-oeF-h4qIFmdZXFwnH4yudqMXg_cGg"/><div class="flex flex-col"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">KORU</span><span class="font-title-md text-title-md text-primary leading-tight tracking-tight">Service</span></div></div><a class="flex items-center justify-center p-space-xs rounded-full min-w-[44px] min-h-[44px] hover:opacity-90 transition-opacity" data-path="memorial-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWueaNoO8vgqGmaEdkAc75S3AVKVYb1uXKi6ONUpPBuNnp1ODn4W-dpGoMzeEaiV4yCuTEsPXKRM5dmgswWhe-7EFOHb-JmikAjvnUl_y47dvgwLPwBz5K1CN1jgTVzxgjYyWPH85lpAmccKhwNGngtpo1-mZyxEOXZDRpG-cCAfMmiksZUigoXzky7QD9n5hllgJ8K9CJwUDPK7gwANMnlsXwfaYVbwqReOofGyy4NjHUDX4dSKeg"/></a></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl gap-space-lg">
+<!-- 1. Ceremony Hero Card -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<div class="relative w-full h-52 bg-cover bg-center" data-alt="Tender memorial floral arrangement with white native lilies and green eucalyptus leaves against a soft sunlit stained-glass window background, serene and reverent atmosphere in warm natural light, cinematic depth of field, gentle earth tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDifbyP0fdI4yTnedfU7_GVsYGWSWhqUFoiD-paJ5cQPwMTYIcmNNhQbM_ToasxzRhAT0k_M05YQYoLHXWScYPUDJbGPVTcTD2jYAFbnp2g7MrlfD5q_oEiWWgm2GZmoNF9K5k4Wy0CEsUO12_flDC4A0vgEvuhRdsrb7qEy7hmVqyO8EIgreFXvOBL5HzKrEk5FTk-w2Hn91_XLvYs7Yi2Ce_6iL_7LQH1Jag61GClaE8LXtpRsNDI')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="absolute top-space-md left-space-md">
+<span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">spa</span>
+          Service Program
+        </span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md text-on-primary">
+<p class="font-label-md text-label-md text-secondary-fixed uppercase tracking-wider mb-space-xs">Celebration of Life</p>
+<h1 class="font-headline-md text-headline-md leading-snug drop-shadow-sm">Margaret “Peggy” Sutherland</h1>
+<p class="font-body-sm text-body-sm text-surface-container-highest mt-space-xs">1942 – 2024 • A life of quiet grace &amp; warmth</p>
+</div>
+</div>
+<!-- Date, Time, Venue Pills -->
+<div class="p-space-lg flex flex-col gap-space-md bg-surface-container-lowest">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wide">Date &amp; Time</span>
+<span class="font-title-md text-title-md text-on-surface">Saturday, November 16, 2024</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11:00 AM NZDT (GMT+12)</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wide">Location</span>
+<span class="font-title-md text-title-md text-on-surface">St. Luke’s Chapel &amp; Botanic Gardens</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">70 New North Road, Kingsland, Auckland</span>
+</div>
+</div>
+<!-- Quick Add to Calendar -->
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-sm py-space-md px-space-lg rounded-xl bg-surface-container-low text-primary font-label-lg text-label-lg hover:bg-surface-container active:scale-[0.99] transition-all" id="btn-add-cal">
+<span class="material-symbols-outlined text-[18px]">event</span>
+<span>Add Ceremony to Calendar</span>
+</button>
+</div>
+</div>
+<!-- 2. Live Stream & Remote Attendance Section -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></div>
+<span class="font-label-lg text-label-lg text-primary">Live Sanctuary Broadcast</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">High Definition</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Cannot attend in person? You are warmly welcomed to unite with us in prayer and remembrance from afar.</p>
+<!-- Video Preview Card -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-inverse-surface flex items-center justify-center group shadow-inner">
+<div class="absolute inset-0 bg-cover bg-center opacity-65" data-alt="Quiet sun-dappled chapel interior with warm wood pews, glowing candle altar, soft morning light filtering through high arches, peaceful and contemplative sanctuary mood" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAokRKfH2YTEfozD1xNN2y2rKD-IIAUNzNmZT5cKfo7CPCleAGVSz8k1GGCj6YaCnglK3atOzCdIb4bnFNlCUNIRav5ic9qbMdDwUCOalOa0d2rwDoEVu-EmdDUr1xtYejkIrN1YU1H2nBnIsluuQqhpm321xFyC5QVX9-fhpTdxU9OA5H6AmYThS4vd7sUuZuayO43oQUFoZMkyxjbpRYu9RYdBt3agwVJY2lCyrXvubII6Ar1iaQT')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-black/30"></div>
+<!-- Center Play / Countdown Badge -->
+<div class="relative z-10 flex flex-col items-center gap-space-xs text-center p-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center shadow-lg text-primary">
+<span class="material-symbols-outlined text-[26px] ml-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<span class="font-label-md text-label-md text-surface-container-lowest tracking-wide uppercase mt-space-xs">Broadcast Starting In</span>
+<div class="flex items-center gap-space-xs font-title-lg text-title-lg text-surface font-semibold tracking-tight">
+<span class="px-2 py-0.5 rounded bg-inverse-surface/80 text-surface-bright">03d</span>
+<span>:</span>
+<span class="px-2 py-0.5 rounded bg-inverse-surface/80 text-surface-bright">14h</span>
+<span>:</span>
+<span class="px-2 py-0.5 rounded bg-inverse-surface/80 text-surface-bright">22m</span>
+</div>
+</div>
+<div class="absolute bottom-space-sm left-space-md right-space-md flex items-center justify-between text-surface-container-highest">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Private Memorial Stream
+        </span>
+<span class="font-label-sm text-label-sm">Stream link active 15m prior</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-space-sm py-space-md px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container active:scale-[0.99] transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Set Livestream Reminder</span>
+</button>
+</div>
+<!-- 3. Order of Service (Interactive Program Timeline) -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Order of Service</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tap any chapter to view readings and hymns</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">menu_book</span>
+</div>
+<!-- Timeline Frond List -->
+<div class="relative flex flex-col gap-space-md pl-4">
+<!-- Continuous Timeline Stem -->
+<div class="absolute left-[23px] top-3 bottom-4 w-0.5 bg-surface-container-high"></div>
+<!-- Item 1 -->
+<div class="relative flex items-start gap-space-md group cursor-pointer" onclick="toggleTimelineDetail('item-1')">
+<div class="w-5 h-5 rounded-full bg-secondary-fixed ring-4 ring-surface-container-lowest flex items-center justify-center shrink-0 z-10 mt-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">10:30 AM</span>
+<span class="material-symbols-outlined text-secondary text-[18px] transition-transform" id="icon-item-1">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-0.5">Gathering &amp; Welcome Music</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vivaldi’s “Four Seasons: Autumn” played by the Auckland String Quartet.</p>
+<div class="hidden mt-space-sm pt-space-xs text-body-sm text-on-surface-variant" id="item-1">
+<p class="italic">“There is a time for stillness, as seeds take solace in the deep quiet earth.”</p>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative flex items-start gap-space-md group cursor-pointer" onclick="toggleTimelineDetail('item-2')">
+<div class="w-5 h-5 rounded-full bg-secondary ring-4 ring-surface-container-lowest flex items-center justify-center shrink-0 z-10 mt-1">
+<div class="w-2 h-2 rounded-full bg-on-secondary"></div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">11:00 AM</span>
+<span class="material-symbols-outlined text-secondary text-[18px] transition-transform" id="icon-item-2">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-0.5">Words of Remembrance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Opening remarks by Celebrant Revered Claire Hastings.</p>
+<div class="hidden mt-space-sm pt-space-xs text-body-sm text-on-surface-variant" id="item-2">
+<p>Welcoming family, friends from overseas, and honoring Peggy’s eight decades of dedication to teaching.</p>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative flex items-start gap-space-md group cursor-pointer" onclick="toggleTimelineDetail('item-3')">
+<div class="w-5 h-5 rounded-full bg-secondary ring-4 ring-surface-container-lowest flex items-center justify-center shrink-0 z-10 mt-1">
+<div class="w-2 h-2 rounded-full bg-on-secondary"></div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">11:20 AM</span>
+<span class="material-symbols-outlined text-secondary text-[18px] transition-transform" id="icon-item-3">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-0.5">Family Eulogy &amp; Photo Tribute</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spoken by Arthur Sutherland (son) &amp; Eleanor Sutherland (granddaughter).</p>
+<div class="hidden mt-space-sm pt-space-xs text-body-sm text-on-surface-variant" id="item-3">
+<p class="mb-space-xs">Accompanied by a visual montage curated from family holidays in Marlborough Sounds.</p>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative flex items-start gap-space-md group cursor-pointer" onclick="toggleTimelineDetail('item-4')">
+<div class="w-5 h-5 rounded-full bg-secondary-fixed ring-4 ring-surface-container-lowest flex items-center justify-center shrink-0 z-10 mt-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">11:45 AM</span>
+<span class="material-symbols-outlined text-secondary text-[18px] transition-transform" id="icon-item-4">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-0.5">Poem: ‘The Peace of Wild Things’</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">By Wendell Berry, read by lifelong friend Dr. Miriam Thorne.</p>
+<div class="hidden mt-space-sm pt-space-xs text-body-sm text-on-surface-variant" id="item-4">
+<blockquote class="italic border-l-2 border-secondary pl-space-sm my-space-xs">
+              “When despair for the world grows in me... I come into the peace of wild things who do not tax their lives with forethought of grief.”
+            </blockquote>
+</div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="relative flex items-start gap-space-md group cursor-pointer" onclick="toggleTimelineDetail('item-5')">
+<div class="w-5 h-5 rounded-full bg-secondary-fixed ring-4 ring-surface-container-lowest flex items-center justify-center shrink-0 z-10 mt-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">12:00 PM</span>
+<span class="material-symbols-outlined text-secondary text-[18px] transition-transform" id="icon-item-5">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-0.5">Procession &amp; Rimu Tree Planting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Walk to the Botanic Gardens Memorial Glade to plant a native Rimu frond.</p>
+<div class="hidden mt-space-sm pt-space-xs text-body-sm text-on-surface-variant" id="item-5">
+<p>Attendees are invited to place a pinch of commemorative earth at the tree roots.</p>
+</div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="relative flex items-start gap-space-md group cursor-pointer" onclick="toggleTimelineDetail('item-6')">
+<div class="w-5 h-5 rounded-full bg-secondary-fixed-dim ring-4 ring-surface-container-lowest flex items-center justify-center shrink-0 z-10 mt-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">12:30 PM</span>
+<span class="material-symbols-outlined text-secondary text-[18px] transition-transform" id="icon-item-6">expand_more</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-0.5">Refreshments &amp; Shared Stories</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gathering at the Garden Pavilion for light lunch and warm memory-sharing.</p>
+<div class="hidden mt-space-sm pt-space-xs text-body-sm text-on-surface-variant" id="item-6">
+<p>Peggy’s favorite Earl Grey tea and elderflower cordial will be served.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. RSVP & Guest Attendance Card -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">Your Attendance RSVP</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kindly reply by November 10 to help us accommodate all guests</p>
+</div>
+</div>
+<!-- Attendance Options -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1">Will you be joining us?</label>
+<div class="grid grid-cols-1 gap-space-xs">
+<button class="rsvp-btn flex items-center justify-between px-space-md py-space-sm rounded-xl bg-secondary-container text-on-secondary-container transition-all" onclick="selectRsvp(this, 'person')" type="button">
+<span class="flex items-center gap-space-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">person</span>
+            Attending in Person
+          </span>
+<span class="material-symbols-outlined text-[20px] check-icon">check_circle</span>
+</button>
+<button class="rsvp-btn flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectRsvp(this, 'stream')" type="button">
+<span class="flex items-center gap-space-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+            Joining via Livestream
+          </span>
+<span class="material-symbols-outlined text-[20px] check-icon opacity-0">check_circle</span>
+</button>
+<button class="rsvp-btn flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectRsvp(this, 'declined')" type="button">
+<span class="flex items-center gap-space-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+            Sending Love (Unable to attend)
+          </span>
+<span class="material-symbols-outlined text-[20px] check-icon opacity-0">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Guest Count & Dietary Notes -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="guest-names">Guest Name(s)</label>
+<input class="w-full mt-1 px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest outline-none" id="guest-names" placeholder="e.g. David &amp; Sarah Thompson" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="rsvp-notes">Dietary Requirements or Note for Peggy’s Family</label>
+<textarea class="w-full mt-1 p-space-md rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest outline-none resize-none" id="rsvp-notes" placeholder="Gluten-free, vegetarian, or words of comfort..." rows="2"></textarea>
+</div>
+</div>
+<button class="w-full py-space-md px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container active:scale-[0.99] transition-all flex items-center justify-center gap-space-sm" id="btn-submit-rsvp" onclick="submitRsvpFeedback()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Confirm RSVP</span>
+</button>
+<div class="hidden text-center text-secondary font-label-md text-label-md py-1" id="rsvp-confirm-msg">
+      Thank you. Your response has been warmly received by the Sutherland family.
+    </div>
+</div>
+<!-- 5. Memorial Donations & Floral Fund -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">forest</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Living Tribute</span>
+<h2 class="font-title-lg text-title-lg text-primary">Native Bush Restoration Trust</h2>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      In lieu of cut flowers, Peggy’s family invites tax-deductible contributions to restore native canopy corridors across the Waitakere Ranges in her memory.
+    </p>
+<!-- Donation Amount Selector -->
+<div class="grid grid-cols-4 gap-space-xs pt-space-xs">
+<button class="donation-btn py-space-sm rounded-xl font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectDonation(this, '25')" type="button">
+        $25
+      </button>
+<button class="donation-btn py-space-sm rounded-xl font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm" onclick="selectDonation(this, '50')" type="button">
+        $50
+      </button>
+<button class="donation-btn py-space-sm rounded-xl font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectDonation(this, '100')" type="button">
+        $100
+      </button>
+<button class="donation-btn py-space-sm rounded-xl font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectDonation(this, 'custom')" type="button">
+        Custom
+      </button>
+</div>
+<!-- Memorial Candle Accent Ribbon -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-tertiary-fixed/30 text-on-tertiary-fixed">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">candle</span>
+<span class="font-label-sm text-label-sm">Every donation dedicates a seedling &amp; lit candle</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary">38 trees gifted</span>
+</div>
+<button class="w-full py-space-md px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container active:scale-[0.99] transition-all flex items-center justify-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+<span id="donate-btn-label">Donate $50 in Peggy’s Memory</span>
+</button>
+</div>
+<!-- 6. Venue Directions & Parking Map preview card -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">map</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-primary">Directions &amp; Parking</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Free Onsite Parking</span>
+</div>
+<!-- Map View -->
+<div class="w-full h-44 rounded-xl bg-cover bg-center relative overflow-hidden shadow-inner flex items-end p-space-md" data-location="St. Luke's Chapel &amp; Botanic Gardens, Auckland" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZCJuKQLjhLIdAVb9DwxOHvTpt5ds1YlkLksS8ezPjuLIxJpIDFwNRzFNqskU37aIw11qbDZYtH5emkhO5B8IY2f9hHmE93cAt_Zl2J9hk8tyVunGjTRppQxYvX_WL2dRCsb3J1m8V9tFU5RcxmKEh2IFTC4jMIBHZwLFg2ITNHuqpBpuSw22CsGLgCOqlN1XATa0V7KQCHNdwx9NRhc5kDpd8emgmN0VG84C2zCv54nbjjYgh6tnq')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between w-full text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">St. Luke’s Main Entrance</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest">Via Gate 3 • Wheelchair accessible</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+</div>
+</div>
+<!-- Parking instructions note -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+        Arrival Guidance
+      </p>
+<p>Reserved mobility spaces are situated right beside the chapel glass conservatory. Overflow parking is situated in Lot B opposite the Botanic Tea Kiosk.</p>
+</div>
+<a class="w-full py-space-md px-space-lg rounded-xl bg-surface-container text-primary font-label-lg text-label-lg hover:bg-surface-container-high active:scale-[0.99] transition-all flex items-center justify-center gap-space-sm" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span>Open in Google Maps</span>
+</a>
+</div>
+</div>
+<script>
+  function toggleTimelineDetail(id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (!el) return;
+    const isHidden = el.classList.contains('hidden');
+    if (isHidden) {
+      el.classList.remove('hidden');
+      if (icon) icon.textContent = 'expand_less';
+    } else {
+      el.classList.add('hidden');
+      if (icon) icon.textContent = 'expand_more';
+    }
+  }
+
+  function selectRsvp(buttonEl, type) {
+    const allBtns = document.querySelectorAll('.rsvp-btn');
+    allBtns.forEach(btn => {
+      btn.className = 'rsvp-btn flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all';
+      const chk = btn.querySelector('.check-icon');
+      if (chk) chk.classList.add('opacity-0');
+    });
+
+    buttonEl.className = 'rsvp-btn flex items-center justify-between px-space-md py-space-sm rounded-xl bg-secondary-container text-on-secondary-container transition-all';
+    const activeChk = buttonEl.querySelector('.check-icon');
+    if (activeChk) activeChk.classList.remove('opacity-0');
+  }
+
+  function submitRsvpFeedback() {
+    const msg = document.getElementById('rsvp-confirm-msg');
+    const submitBtn = document.getElementById('btn-submit-rsvp');
+    if (msg && submitBtn) {
+      msg.classList.remove('hidden');
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Response Saved</span>';
+      submitBtn.classList.remove('bg-primary');
+      submitBtn.classList.add('bg-secondary');
+    }
+  }
+
+  function selectDonation(btn, amount) {
+    const allDonationBtns = document.querySelectorAll('.donation-btn');
+    allDonationBtns.forEach(b => {
+      b.className = 'donation-btn py-space-sm rounded-xl font-label-md text-label-md transition-all bg-surface-container-low text-on-surface hover:bg-surface-container';
+    });
+    btn.className = 'donation-btn py-space-sm rounded-xl font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm';
+
+    const donateLabel = document.getElementById('donate-btn-label');
+    if (donateLabel) {
+      if (amount === 'custom') {
+        donateLabel.innerHTML = 'Enter Custom Contribution';
+      } else {
+        donateLabel.innerHTML = 'Donate $' + amount + ' in Peggy&rsquo;s Memory';
+      }
+    }
+  }
+
+  document.getElementById('btn-add-cal')?.addEventListener('click', function() {
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px]">event_available</span><span>Calendar Invite Downloaded</span>';
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(45,64,55,0.06)]" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold"><div class="flex justify-around items-center h-16 px-margin-mobile"><a class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full text-on-surface-variant hover:text-on-surface transition-all min-w-[44px] min-h-[44px]" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">local_florist</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full text-on-surface-variant hover:text-on-surface transition-all min-w-[44px] min-h-[44px]" data-path="life-story" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-label-sm">Life Story</span></a><a class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full text-on-surface-variant hover:text-on-surface transition-all min-w-[44px] min-h-[44px]" data-path="tribute-wall" href="#"><span class="material-symbols-outlined text-[22px]">candle</span><span class="font-label-sm text-label-sm">Tributes</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full transition-all min-w-[44px] min-h-[44px] bg-secondary-container text-on-secondary-container font-semibold" data-path="service" href="#"><span class="material-symbols-outlined text-[22px]">church</span><span class="font-label-sm text-label-sm">Service</span></a></div></nav></body></html>

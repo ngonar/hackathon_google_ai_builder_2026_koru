@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "inverse-primary": "#b6ccbf", "tertiary": "#3b1f00", "surface-container-low": "#edf6f1", "surface-container-highest": "#dce4e0", "on-tertiary-fixed": "#2c1600", "on-primary-fixed-variant": "#384b42", "on-secondary": "#ffffff", "inverse-surface": "#2a322f", "on-surface": "#151d1a", "secondary-fixed": "#cbead5", "surface": "#f3fbf6", "primary-container": "#2d4037", "on-tertiary-container": "#cd9d6d", "on-secondary-fixed": "#052014", "secondary-container": "#cbead5", "surface-container": "#e7f0eb", "primary": "#172a22", "surface-bright": "#f3fbf6", "on-primary-fixed": "#0c1f17", "outline": "#737874", "on-error-container": "#93000a", "on-primary": "#ffffff", "inverse-on-surface": "#eaf3ee", "on-secondary-fixed-variant": "#324c3d", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#afceba", "tertiary-container": "#56340e", "outline-variant": "#c2c8c3", "background": "#f3fbf6", "primary-fixed-dim": "#b6ccbf", "surface-container-lowest": "#ffffff", "on-surface-variant": "#424844", "on-primary-container": "#96aba0", "surface-variant": "#dce4e0", "tertiary-fixed-dim": "#f0bd8b", "on-error": "#ffffff", "secondary": "#496454", "error-container": "#ffdad6", "surface-tint": "#4f6359", "on-tertiary-fixed-variant": "#623f18", "primary-fixed": "#d2e8db", "on-background": "#151d1a", "surface-container-high": "#e2eae5", "surface-dim": "#d3dcd7", "on-secondary-container": "#4f6a5a", "tertiary-fixed": "#ffdcbd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "gutter-lg": "1.5rem", "margin-desktop": "3rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-sm": "0.75rem", "gutter": "1rem", "margin-tablet": "2rem" }, "fontFamily": { "title-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"] }, "fontSize": { "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Koru Memorials Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uz-MwBNmaRD3GZW7MLA3skZ-Qn37Sl-sFSbdCU4LBRpCQxPEu_-exAByv7WrRI-h8zLraGKP-gzXdSJgckK0vzVkFmlxy1nGc94GETGQg27XIJMWBzUPLjmbpCS1Bo1xkLKG_qKZ5TPEmgicjd_y4nVxRMcvDR88h7QFRJEO80jJnEArBJZVHm6jimEH12G5EBJcy6j5HYJBLvC0ywaTc6y9Sg-oeF-h4qIFmdZXFwnH4yudqMXg_cGg"/><div class="flex flex-col"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">KORU</span><span class="font-title-md text-title-md text-primary leading-tight tracking-tight">Tribute Wall</span></div></div><a class="flex items-center justify-center p-space-xs rounded-full min-w-[44px] min-h-[44px] hover:opacity-90 transition-opacity" data-path="memorial-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWueaNoO8vgqGmaEdkAc75S3AVKVYb1uXKi6ONUpPBuNnp1ODn4W-dpGoMzeEaiV4yCuTEsPXKRM5dmgswWhe-7EFOHb-JmikAjvnUl_y47dvgwLPwBz5K1CN1jgTVzxgjYyWPH85lpAmccKhwNGngtpo1-mZyxEOXZDRpG-cCAfMmiksZUigoXzky7QD9n5hllgJ8K9CJwUDPK7gwANMnlsXwfaYVbwqReOofGyy4NjHUDX4dSKeg"/></a></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile gap-space-lg pb-12">
+<!-- Tribute Sanctuary & Candle Vigil Hero -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm p-space-md flex flex-col gap-space-md">
+<!-- Ambient Warm Candle Glow -->
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-tertiary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-6 -bottom-6 w-36 h-36 rounded-full bg-secondary-container/30 blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Sanctuary of Light</span>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight mt-space-xs">Margaret “Peggy” Sutherland</h2>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container/60 text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+<span class="font-label-sm text-label-sm">Memorial Active</span>
+</div>
+</div>
+<!-- Vigil Counter Capsule -->
+<div class="relative z-10 flex items-center justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="relative flex items-center justify-center w-12 h-12 rounded-full bg-tertiary-fixed/80 shadow-md text-tertiary-container animate-pulse">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">214 Candles Glowing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">76 heartfelt memories shared</span>
+</div>
+</div>
+<button class="flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-full bg-primary text-on-primary shadow-sm hover:opacity-95 active:scale-95 transition-all" id="lightCandleBtn" onclick="toggleCandleLight()">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">candle</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Light a Candle</span>
+</button>
+</div>
+<div class="relative z-10 flex items-center gap-space-xs px-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>
+<p class="font-body-sm text-body-sm">Each flame burns faithfully for 7 days in Peggy’s remembrance</p>
+</div>
+<!-- Quick Contribution Strip -->
+<div class="relative z-10 grid grid-cols-3 gap-space-xs pt-space-xs">
+<button class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" onclick="openModal('Photo')">
+<span class="material-symbols-outlined text-[20px] text-secondary">add_a_photo</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-space-xs">Add Photo</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" onclick="openModal('Memory')">
+<span class="material-symbols-outlined text-[20px] text-secondary">edit_note</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-space-xs">Write Story</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" onclick="openModal('Voice')">
+<span class="material-symbols-outlined text-[20px] text-secondary">mic</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-space-xs">Voice Note</span>
+</button>
+</div>
+</div>
+<!-- Filter Category Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs -mx-margin-mobile px-margin-mobile">
+<button class="filter-tab active flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span>All Tributes</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-lowest text-on-secondary-container font-label-sm text-label-sm">76</span>
+</button>
+<button class="filter-tab flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container transition-colors">
+<span>Stories</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">38</span>
+</button>
+<button class="filter-tab flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container transition-colors">
+<span>Candles &amp; Notes</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">24</span>
+</button>
+<button class="filter-tab flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container transition-colors">
+<span>Photos</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">14</span>
+</button>
+</div>
+<!-- Feed of Memorial Tributes -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: Family Photo + Narrative -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-title-md text-title-md">
+            EV
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Eleanor Vance</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Daughter</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Yesterday at 4:18 PM</span>
+</div>
+</div>
+<button class="p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Photo with Soft Framing -->
+<div class="rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-52 object-cover" data-alt="A warm vintage photographic memory of an elderly botanical professor gently inspecting verdant ferns inside a sunlit glass greenhouse with golden morning dust motes in soft light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1cauaVEs4NKlvBxF0KkZDEEo3uTa9kDJx538wleZ8Yvf1xybybtS8iHxwwde59XafTIi5Q7RCB6YqN6Zdu2KY3S_VvIEjzoNNRRkrMNenYI-DoRmRJJuSY-rLLgzMK1BSHaD8-d-myX6ArYmsw2ANKtmD4uu0BvSwHWLa-yCNhQi1_mIc8PteVbW6WQdbxbUqcPIahxHzh1KwEk68GM_DLuE0jnenUp7vYqKoEa4MWkCLR5gwTrF1"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        “Mum taught all of us to look closely at the smallest moss and flower. Every spring morning, I feel her right next to me in the garden. Rest gently, Mama.”
+      </p>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs hover:text-error transition-colors" onclick="toggleHeart(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="font-label-sm text-label-sm count">18</span>
+</button>
+<button class="flex items-center gap-space-xs hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span class="font-label-sm text-label-sm">4 warm reflections</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">candle</span>
+<span class="font-label-sm text-label-sm">Candle paired</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Candle Tribute Note -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="absolute right-0 top-0 bottom-0 w-2 bg-tertiary-fixed"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">The Miller Family</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lit a candle • 2 hours ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">flare</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-body-md text-body-md text-on-surface italic">
+          “Sending deepest peace and enduring love to Arthur and the whole Sutherland family during this quiet hour.”
+        </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">spa</span>
+<span class="font-label-sm text-label-sm">Holding space in Edinburgh</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline">Send Comfort</button>
+</div>
+</div>
+<!-- Card 3: Audio Poem Tribute -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-title-md text-title-md">
+            LV
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Liam Vance</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Grandson</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Shared an Audio Recording</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">graphic_eq</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary">“The Silver Fern Uncurling” (Original Poem)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recited at sunset by Liam in her favorite library room</p>
+</div>
+<!-- Tactile Audio Player Strip -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow hover:opacity-90 active:scale-95 transition-all" id="playAudioBtn" onclick="toggleAudio()">
+<span class="material-symbols-outlined text-[22px]" id="playIcon">play_arrow</span>
+</button>
+<!-- Waveform Visualizer -->
+<div class="flex-1 flex items-center gap-1 h-8 px-space-xs">
+<div class="w-1 bg-secondary rounded-full h-3"></div>
+<div class="w-1 bg-secondary rounded-full h-5"></div>
+<div class="w-1 bg-secondary rounded-full h-7"></div>
+<div class="w-1 bg-secondary rounded-full h-4"></div>
+<div class="w-1 bg-secondary rounded-full h-6"></div>
+<div class="w-1 bg-secondary rounded-full h-8"></div>
+<div class="w-1 bg-secondary rounded-full h-5"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-3"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-6"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-4"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-7"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-5"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-3"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-4"></div>
+<div class="w-1 bg-secondary-fixed-dim rounded-full h-2"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1:42</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs hover:text-error transition-colors" onclick="toggleHeart(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="font-label-sm text-label-sm count">29</span>
+</button>
+<span class="font-label-sm text-label-sm">6 listens today</span>
+</div>
+<button class="flex items-center gap-space-xs text-secondary hover:underline">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+<span class="font-label-sm text-label-sm">Save to Archive</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Colleague Remembrance -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-title-md text-title-md">
+            TH
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Dr. Thomas Hastings</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Dean Emeritus</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 days ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">school</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        “Peggy’s academic rigor was matched only by her boundless warmth for her students. Her pioneering classification of subalpine flora continues to guide research across three continents. Her legacy lives in hundreds of botanists across the globe.”
+      </p>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs hover:text-error transition-colors" onclick="toggleHeart(this)">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="font-label-sm text-label-sm count">41</span>
+</button>
+<button class="flex items-center gap-space-xs hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">reply</span>
+<span class="font-label-sm text-label-sm">Reply</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Department of Botany</span>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Condolence Trigger Input -->
+<div class="sticky bottom-20 z-30 w-full mt-space-sm">
+<div class="flex items-center gap-space-sm p-space-xs pl-space-md rounded-full bg-surface-container-lowest shadow-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">edit</span>
+<input class="bg-transparent flex-1 font-body-sm text-body-sm text-on-surface focus:outline-none placeholder:text-on-surface-variant" onfocus="openModal('Memory')" placeholder="Leave a warm memory or condolence..." type="text"/>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform shadow-sm" onclick="openModal('Memory')">
+<span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</button>
+</div>
+</div>
+<!-- Tribute Modal Dialog (Simulated Interaction) -->
+<div class="hidden fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 backdrop-blur-sm p-margin-mobile" id="tributeModal">
+<div class="w-full max-w-md rounded-xl bg-surface-container-lowest p-space-lg shadow-xl flex flex-col gap-space-md animate-fade-in">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">favorite</span>
+<h3 class="font-headline-sm text-headline-sm text-primary" id="modalTitle">Share a Memory</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Your Kinship or Connection</label>
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Family</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Student</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Colleague</button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Friend</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Reflection</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none placeholder:text-on-surface-variant" placeholder="Share a gentle story, lesson learned, or warm remembrance of Peggy..." rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface">Light an accompanying candle</span>
+</label>
+<button class="px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-md text-label-md shadow hover:opacity-90" onclick="submitTribute()">Post Tribute</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleHeart(button) {
+    const icon = button.querySelector('.material-symbols-outlined');
+    const countEl = button.querySelector('.count');
+    let count = parseInt(countEl.textContent, 10);
+    if (icon.style.fontVariationSettings && icon.style.fontVariationSettings.includes("'FILL' 1")) {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.classList.remove('text-error');
+      countEl.textContent = count - 1;
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.classList.add('text-error');
+      countEl.textContent = count + 1;
+    }
+  }
+
+  function toggleCandleLight() {
+    const btn = document.getElementById('lightCandleBtn');
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span><span class="font-label-md text-label-md">Candle Lit</span>`;
+    btn.classList.replace('bg-primary', 'bg-tertiary-container');
+    btn.classList.replace('text-on-primary', 'text-white');
+  }
+
+  function toggleAudio() {
+    const icon = document.getElementById('playIcon');
+    if (icon.innerText === 'play_arrow') {
+      icon.innerText = 'pause';
+    } else {
+      icon.innerText = 'play_arrow';
+    }
+  }
+
+  function openModal(type) {
+    const modal = document.getElementById('tributeModal');
+    const title = document.getElementById('modalTitle');
+    title.innerText = 'Share a ' + type;
+    modal.classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('tributeModal').classList.add('hidden');
+  }
+
+  function submitTribute() {
+    closeModal();
+    alert('Thank you. Your memory has been gently added to Margaret\'s sanctuary.');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(45,64,55,0.06)]" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold"><div class="flex justify-around items-center h-16 px-margin-mobile"><a class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full text-on-surface-variant hover:text-on-surface transition-all min-w-[44px] min-h-[44px]" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">local_florist</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full text-on-surface-variant hover:text-on-surface transition-all min-w-[44px] min-h-[44px]" data-path="life-story" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-label-sm">Life Story</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full transition-all min-w-[44px] min-h-[44px] bg-secondary-container text-on-secondary-container font-semibold" data-path="tribute-wall" href="#"><span class="material-symbols-outlined text-[22px]">candle</span><span class="font-label-sm text-label-sm">Tributes</span></a><a class="flex flex-col items-center justify-center gap-space-xs py-space-xs px-space-md rounded-full text-on-surface-variant hover:text-on-surface transition-all min-w-[44px] min-h-[44px]" data-path="service" href="#"><span class="material-symbols-outlined text-[22px]">church</span><span class="font-label-sm text-label-sm">Service</span></a></div></nav></body></html>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "variant-ce063e8a",
+    "title": "Sunlit Conservatory • Maternal Serenity & Warmth",
+    "scene_id": "conservatory",
+    "scene_name": "Sunlit Conservatory",
+    "expression": "Maternal Serenity & Warmth",
+    "image_url": "/static/avatars/peggy_flow_variant-ce063e8a.png",
+    "is_active": false,
+    "fidelity_score": 98.5,
+    "prompt_used": "Google Flow Veo/Imagen consistent character generation: Character 'Margaret Sutherland', Maternal Serenity & Warmth, sitting in a sun-drenched Victorian conservatory surrounded by silver ferns, potted jasmine, and botanical glass terrariums, soft morning sun rays, gentle golden dust motes. Gentle natural expressions, hyperrealistic video frame, photorealistic portrait",
+    "created_at": "2026-10-18T09:12:37.287192"
+  },
+  {
+    "id": "variant-b112770a",
+    "title": "Fireside Library • Gentle Empathetic Listening",
+    "scene_id": "fireside",
+    "scene_name": "Fireside Library",
+    "expression": "Gentle Empathetic Listening",
+    "image_url": "/static/avatars/peggy_flow_variant-b112770a.png",
+    "is_active": false,
+    "fidelity_score": 98.5,
+    "prompt_used": "Google Flow Veo/Imagen consistent character generation: Character 'Margaret Sutherland', Gentle Empathetic Listening, relaxing in a cozy timber armchair beside a warm stone fireplace, a steaming mug of lavender tea on a rustic oak side table, warm amber shadows, comforting intimate atmosphere. Gentle natural expressions, hyperrealistic video frame, photorealistic portrait",
+    "created_at": "2026-10-18T09:04:06.666527"
+  },
+  {
+    "id": "variant-2887a66b",
+    "title": "Southern Alps Meadow • Comforting Laugh",
+    "scene_id": "southern_alps",
+    "scene_name": "Southern Alps Meadow",
+    "expression": "Comforting Laugh",
+    "image_url": "/static/avatars/peggy_flow_variant-2887a66b.png",
+    "is_active": true,
+    "fidelity_score": 98.5,
+    "prompt_used": "Google Flow Veo/Imagen consistent character generation: Character 'Margaret Sutherland', Comforting Laugh, overlooking a high mountain tussock meadow on the Southern Alps of New Zealand, wild alpine buttercups, crisp clear air, soft gentle breeze moving silver hair strands. Gentle natural expressions, hyperrealistic video frame, photorealistic portrait",
+    "created_at": "2026-10-18T07:20:22.321923"
+  },
+  {
+    "id": "variant-cons-master",
+    "title": "Conservatory Morning Radiance (Master)",
+    "scene_id": "conservatory",
+    "scene_name": "Sunlit Conservatory",
+    "expression": "Maternal Serenity & Warmth",
+    "image_url": "/static/peggy_avatar.png",
+    "is_active": false,
+    "fidelity_score": 98.8,
+    "prompt_used": "Google Flow consistent subject prompt: Margaret Sutherland, 78yo grandmother, silver hair, hazel eyes, moss cardigan, sunlit conservatory with jasmine",
+    "created_at": "2026-10-18T07:07:30.705068"
+  },
+  {
+    "id": "variant-alps-story",
+    "title": "Southern Alps Reminiscing (1974 Expedition)",
+    "scene_id": "southern_alps",
+    "scene_name": "Southern Alps Meadow",
+    "expression": "Nostalgic Storyteller Glance",
+    "image_url": "/static/avatars/peggy_alps.png",
+    "is_active": false,
+    "fidelity_score": 97.6,
+    "prompt_used": "Google Flow consistent subject prompt: Margaret Sutherland in outdoor woolen scarf on Otago tussock ridge, soft alpine wind, contemplative smile",
+    "created_at": "2026-10-18T07:07:30.706311"
+  },
+  {
+    "id": "variant-fireside-peace",
+    "title": "Fireside Hearth Communion",
+    "scene_id": "fireside",
+    "scene_name": "Fireside Library",
+    "expression": "Gentle Empathetic Listening",
+    "image_url": "/static/avatars/peggy_fireside.png",
+    "is_active": false,
+    "fidelity_score": 98.2,
+    "prompt_used": "Google Flow consistent subject prompt: Margaret Sutherland in warm timber study, gentle glowing hearth light, serene affectionate expression",
+    "created_at": "2026-10-18T07:07:30.706339"
+  },
+  {
+    "id": "variant-garden-botanist",
+    "title": "Lavender Harbor Bloom",
+    "scene_id": "cottage_garden",
+    "scene_name": "Harbor Cottage Garden",
+    "expression": "Joyful Botanic Enthusiasm",
+    "image_url": "/static/avatars/peggy_garden.png",
+    "is_active": false,
+    "fidelity_score": 97.9,
+    "prompt_used": "Google Flow consistent subject prompt: Margaret Sutherland holding wild lavender sprig, Dunedin harbor backdrop, warm crinkling eye smile",
+    "created_at": "2026-10-18T07:07:30.706346"
+  }
+]

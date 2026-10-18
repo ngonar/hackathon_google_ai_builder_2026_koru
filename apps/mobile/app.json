@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "KORU",
+    "slug": "koru-memorial",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f3fbf6"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ngonar.koru"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f3fbf6"
+      },
+      "package": "com.ngonar.koru"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow KORU to access your microphone for voice communion with your memorial presence."
+        }
+      ]
+    ]
+  }
+}
